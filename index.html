@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>शिल्पी ग्राम सर्वे फॉर्म</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <form id="surveyForm" novalidate>
+      <h1 class="form-title">शिल्पी ग्राम सर्वे फॉर्म</h1>
+
+      <!-- 1 -->
+      <div class="section-title">1. व्यक्तिगत जानकारी —</div>
+
+      <div class="field-row">
+        <div class="label">1.1. नाम</div>
+        <div class="dash">—</div>
+        <input type="text" name="naam" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.2. पिता / पति का नाम</div>
+        <div class="dash">—</div>
+        <input type="text" name="pitaPatiNaam" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.3. जन्म तिथि</div>
+        <div class="dash">—</div>
+        <input type="date" id="dob" name="janmTithi" class="line-input date-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.4. लिंग</div>
+        <div class="dash">—</div>
+        <div class="options-row">
+          <label><input type="radio" name="ling" value="पुरुष" required /> पुरुष</label>
+          <label><input type="radio" name="ling" value="महिला" /> महिला</label>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.5. जाति</div>
+        <div class="dash">—</div>
+        <div class="options-row">
+          <label><input type="radio" name="jaati" value="एससी" required /> एससी</label>
+          <label><input type="radio" name="jaati" value="एसटी" /> एसटी</label>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.6. शिक्षा स्तर</div>
+        <div class="dash">—</div>
+        <input type="text" name="shikshaStar" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.7. संपर्क नंबर</div>
+        <div class="dash">—</div>
+        <input type="tel" name="samparkNumber" class="line-input" maxlength="10" pattern="[0-9]{10}" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.8. आधार संख्या (वैकल्पिक)</div>
+        <div class="dash">—</div>
+        <input type="text" name="aadhar" class="line-input" maxlength="12" pattern="[0-9]{12}" />
+      </div>
+
+      <div class="field-row">
+        <div class="label">1.9. ईमेल (यदि हो)</div>
+        <div class="dash">—</div>
+        <input type="email" name="email" class="line-input" />
+      </div>
+
+      <!-- 2 -->
+      <div class="section-title">2. पते से सम्बन्धित जानकारी</div>
+
+      <div class="field-row">
+        <div class="label">2.1. स्थायी पता</div>
+        <div class="dash"></div>
+        <div></div>
+      </div>
+
+      <div class="sub-group">
+        <div class="field-row">
+          <div class="label">ग्राम</div>
+          <div class="dash">—</div>
+          <input type="text" name="gram" class="line-input" required />
+        </div>
+
+        <div class="field-row">
+          <div class="label">पोस्ट</div>
+          <div class="dash">—</div>
+          <input type="text" name="post" class="line-input" required />
+        </div>
+
+        <div class="field-row">
+          <div class="label">तहसील</div>
+          <div class="dash">—</div>
+          <input type="text" name="tehsil" class="line-input" required />
+        </div>
+
+        <div class="field-row">
+          <div class="label">जिला</div>
+          <div class="dash">—</div>
+          <input type="text" name="jila" class="line-input" required />
+        </div>
+
+        <div class="field-row">
+          <div class="label">राज्य</div>
+          <div class="dash">—</div>
+          <input type="text" name="rajya" class="line-input" required />
+        </div>
+
+        <div class="field-row">
+          <div class="label">पिन कोड</div>
+          <div class="dash">—</div>
+          <input type="text" name="pincode" class="line-input" maxlength="6" pattern="[0-9]{6}" required />
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="label">2.2. वर्तमान पता (यदि भिन्न हो)</div>
+        <div class="dash">—</div>
+        <input type="text" name="vartmanPata" class="line-input" />
+      </div>
+
+      <!-- 3 -->
+      <div class="section-title">3. शिल्प / हुनर से सम्बन्धित जानकारी —</div>
+
+      <div class="field-row">
+        <div class="label">3.1. मुख्य शिल्प</div>
+        <div class="dash">—</div>
+        <input type="text" name="mukhyaShilp" class="line-input" required />
+      </div>
+
+      <div class="hint">
+        (जैसे – कढ़ाई, बुनाई, लकड़ी का कार्य, मिट्टी कला, धातु कला, चित्रकला, तांबा कला आदि)
+      </div>
+
+      <div class="field-row">
+        <div class="label">3.2. अनुभव (वर्षों में)</div>
+        <div class="dash">—</div>
+        <input type="text" name="anubhav" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">3.3. यह शिल्प किससे सीखा?</div>
+        <div class="dash">—</div>
+        <input type="text" name="kisSeSikha" class="line-input"  />
+      </div>
+
+      <div class="field-row multi-top">
+        <div class="label"></div>
+        <div class="dash"></div>
+        <div class="options-column">
+          <label><input type="checkbox" name="seekha" value="पारिवारिक परंपरा" /> पारिवारिक परंपरा</label>
+          <label><input type="checkbox" name="seekha" value="प्रशिक्षण प्राप्त किया" /> प्रशिक्षण प्राप्त किया</label>
+          <label><input type="checkbox" name="seekha" value="स्वयं सीखा" /> स्वयं सीखा</label>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="label">3.4. कार्य करने का स्थान</div>
+        <div class="dash">—</div>
+        <div></div>
+      </div>
+
+      <div class="field-row multi-top">
+        <div class="label"></div>
+        <div class="dash"></div>
+        <div class="options-column">
+          <label><input type="checkbox" name="kaamSthan" value="घर पर" /> घर पर</label>
+          <label><input type="checkbox" name="kaamSthan" value="कार्यशाला" /> कार्यशाला</label>
+          <label class="other-line">
+            <input type="checkbox" id="otherWorkCheck" name="kaamSthan" value="अन्य" />
+            अन्य
+            <input type="text" id="otherWorkText" name="otherWorkText" class="inline-input" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="page-break"></div>
+
+      <div class="field-row">
+        <div class="label">3.5. क्या आप किसी समूह / संस्था / सहकारी समिति से जुड़े हैं?</div>
+        <div class="dash">—</div>
+        <div class="options-row">
+          <label><input type="radio" name="groupJoin" value="हाँ" required /> हाँ</label>
+          <label><input type="radio" name="groupJoin" value="नहीं" /> नहीं</label>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="label">यदि हाँ, नाम</div>
+        <div class="dash">—</div>
+        <input type="text" name="groupName" class="line-input" />
+      </div>
+
+      <div class="field-row">
+        <div class="label">3.6. उत्पाद किस बाजार में बेचते हैं?</div>
+        <div class="dash">—</div>
+        <div></div>
+      </div>
+
+      <div class="field-row multi-top">
+        <div class="label"></div>
+        <div class="dash"></div>
+        <div class="options-column">
+          <label><input type="checkbox" name="bazaar" value="स्थानीय हाट / मेला" /> स्थानीय हाट / मेला</label>
+          <label><input type="checkbox" name="bazaar" value="ऑनलाइन" /> ऑनलाइन</label>
+          <label><input type="checkbox" name="bazaar" value="सरकारी प्रदर्शनी" /> सरकारी प्रदर्शनी</label>
+          <label class="other-line">
+            <input type="checkbox" id="otherMarketCheck" name="bazaar" value="अन्य" />
+            अन्य
+            <input type="text" id="otherMarketText" name="otherMarketText" class="inline-input" disabled />
+          </label>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="section-title">4. सहायता / प्रशिक्षण की आवश्यकता —</div>
+
+      <div class="field-row">
+        <div class="label">4.1. क्या आपने कोई शिल्प प्रशिक्षण प्राप्त किया है?</div>
+        <div class="dash">—</div>
+        <div class="options-row">
+          <label><input type="radio" name="training" value="हाँ" required /> हाँ</label>
+          <label><input type="radio" name="training" value="नहीं" /> नहीं</label>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="label">यदि हाँ, संस्था का नाम</div>
+        <div class="dash">—</div>
+        <input type="text" name="trainingOrg" class="line-input" />
+      </div>
+
+      <div class="field-row">
+        <div class="label">4.2. किस प्रकार की सहायता चाहते हैं?</div>
+        <div class="dash">—</div>
+        <div></div>
+      </div>
+
+      <div class="field-row multi-top">
+        <div class="label"></div>
+        <div class="dash"></div>
+        <div class="options-column">
+          <label><input type="checkbox" name="helpType" value="कच्चा माल" /> कच्चा माल</label>
+          <label><input type="checkbox" name="helpType" value="उपकरण" /> उपकरण</label>
+          <label><input type="checkbox" name="helpType" value="विपणन सहायता" /> विपणन सहायता</label>
+          <label><input type="checkbox" name="helpType" value="डिजाइन प्रशिक्षण" /> डिजाइन प्रशिक्षण</label>
+          <label><input type="checkbox" name="helpType" value="वित्तीय सहायता" /> वित्तीय सहायता</label>
+          <label class="other-line">
+            <input type="checkbox" id="otherHelpCheck" name="helpType" value="अन्य" />
+            अन्य
+            <input type="text" id="otherHelpText" name="otherHelpText" class="inline-input" disabled />
+          </label>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="section-title">5. बैंक सम्बन्धित जानकारी —</div>
+
+      <div class="field-row">
+        <div class="label">5.1. बैंक का नाम</div>
+        <div class="dash">—</div>
+        <input type="text" name="bankName" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">5.2. खाता संख्या</div>
+        <div class="dash">—</div>
+        <input type="text" name="accountNumber" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">5.3. IFSC कोड</div>
+        <div class="dash">—</div>
+        <input type="text" name="ifsc" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        <div class="label">5.4. खाता धारक का नाम</div>
+        <div class="dash">—</div>
+        <input type="text" name="accountHolderName" class="line-input" required />
+      </div>
+
+      <div class="field-row">
+        
+          <label>फॉर्म जमा करने की तिथि</label>
+          <div class="dash">—</div>
+          <input type="date" id="submissionDate" name="submissionDate" class="line-input date-input" required/>
+        
+      </div>
+
+      <div class="footer-row">
+        <div class="footer-field long">
+          <label>हस्ताक्षर —</label>
+          <input type="text" name="signature" class="footer-input" required />
+        </div>
+      </div>
+
+      <div class="message-box" id="messageBox"></div>
+
+      <div class="button-row no-print">
+        <button type="button" onclick="window.print()">प्रिंट करें</button>
+        <button type="reset" id="resetBtn">रीसेट करें</button>
+        <button type="submit">सबमिट करें</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
